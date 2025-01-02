@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyhdbpp-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyhdbpp-{{ version }}.tar.gz
   sha256: 4f484e5b38c326c97effddf06677ea64b92577b521453b706eed3092775e7c9f
 
 build:
@@ -15,14 +15,14 @@ build:
     - hdb2csv = pyhdbpp.tools.hdb2csv:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - pyyaml
     - pymysql
     - psycopg2
@@ -35,6 +35,7 @@ test:
     - hdbpp-reader --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.com/tango-controls/hdbpp/libhdbpp-python
