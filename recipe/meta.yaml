@@ -9,6 +9,7 @@ source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyhdbpp-{{ version }}.tar.gz
   sha256: 6607748c5e7d68d2d2d5ea6dbf23110ebb1f70b33f1c192fbaca37545027b115
 
+
 build:
   entry_points:
     - hdbpp-reader = pyhdbpp.reader:main
@@ -46,4 +47,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - ovallcorba
     - sergirubio
