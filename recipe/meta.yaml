@@ -1,5 +1,5 @@
 {% set name = "pyhdbpp" %}
-{% set version = "1.7.4" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyhdbpp-{{ version }}.tar.gz
-  sha256: 6607748c5e7d68d2d2d5ea6dbf23110ebb1f70b33f1c192fbaca37545027b115
+  sha256: b31dca79073d587853219fc603a9e73dfe5fd285f02549cdc7c54b3f89bc5be0
 
 
 build:
