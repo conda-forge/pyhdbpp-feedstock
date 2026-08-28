@@ -1,13 +1,13 @@
 {% set name = "pyhdbpp" %}
-{% set version = "2.1.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyhdbpp-{{ version }}.tar.gz
-  sha256: b31dca79073d587853219fc603a9e73dfe5fd285f02549cdc7c54b3f89bc5be0
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyhdbpp-{{ version }}.tar.gz
+  sha256: 8161c84a01bfabb10e216c5697fa44429dfdab97b0204f87c4b6a6f9f414d7b5
 
 
 build:
