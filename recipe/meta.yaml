@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/pyhdbpp-{{ version }}.tar.gz
-  sha256: 8161c84a01bfabb10e216c5697fa44429dfdab97b0204f87c4b6a6f9f414d7b5
+  sha256: e9e125c2ca802e1ee50570beece887926359603d718425b332b6cbabb5ec26d5
 
 
 build:
